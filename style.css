@@ -1,0 +1,322 @@
+body {
+    background-image: url(./img/champions.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logoScuderia{ 
+    width: 40px;
+    margin-left: 25px;
+    position: relative;
+}
+#title{
+    background-color: rgb(255, 32, 32);
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border:solid 1px;
+    border-radius: 10px;
+    font-family: Verdana, sans-serif;
+}
+#topics{
+    background-color: rgba(255, 0, 0, 0.747);
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border:solid 1px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+.indTopics{
+    color: rgba(255, 255, 0, 0.897);
+    font-family: sans-serif;
+    text-shadow: 0.1em 0.1em #333
+    
+}
+#introduction{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(255, 32, 32);
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border:solid 1px;
+    border-radius: 10px;
+    margin-top: 15%;
+    font-family: Verdana, sans-serif;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    color: rgb(243, 242, 242);
+}
+.paragrafo1 {
+    color: rgb(255, 255, 255);
+    text-shadow: none; 
+    text-shadow: 1px 0 rgb(0, 0, 0), 0 0px black, 1px 0 black, 0 -1px black
+}
+#imgGallery{
+    width: 50%;
+}
+.imgGallery{
+    background-color: rgb(255, 32, 32);
+    text-align: center;
+    font-family: 'Courier New';
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    color: white;
+}
+#h1Gallery{
+    text-shadow: rgb(14, 13, 13) 0.1em 0.1em 0.2em;
+    color: white;
+}
+#imgNoticias{
+    width: 50%;
+}
+.noticias{
+    background-color: rgb(255, 32, 32);
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border:solid 1px;
+    border-radius: 10px;
+    margin-top: 15%;
+    font-family: Verdana, sans-serif;
+    text-shadow: rgb(14, 13, 13) 0.1em 0.1em 0.2em;
+    color: white;
+}
+
+/* Buttom */
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #fffb02bd;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+/* */
+
+/* Estilo padrão para desktop */
+body {
+  background-image: url(./img/champions.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logoScuderia {
+  width: 40px;
+  margin-left: 25px;
+  position: relative;
+}
+
+#title {
+  background-color: rgb(255, 32, 32);
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center;
+  border: solid 1px;
+  border-radius: 10px;
+  font-family: Verdana, sans-serif;
+  max-width: 80%; /* Ajusta a largura máxima */
+}
+
+#introduction {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgb(255, 32, 32);
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center;
+  border: solid 1px;
+  border-radius: 10px;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-family: Verdana, sans-serif;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  color: rgb(243, 242, 242);
+  max-width: 80%; /* Ajusta a largura máxima */
+}
+
+.paragrafo1 {
+  color: black;
+}
+
+#imgGallery {
+  width: 50%;
+}
+
+.imgGallery {
+  background-color: rgb(255, 32, 32);
+  text-align: center;
+  font-family: 'Courier New';
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  color: white;
+}
+
+#h1Gallery {
+  text-shadow: rgb(14, 13, 13) 0.1em 0.1em 0.2em;
+  color: white;
+}
+
+#imgNoticias {
+  width: 50%;
+}
+
+.noticias {
+  background-color: rgb(255, 32, 32);
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center;
+  border: solid 1px;
+  border-radius: 10px;
+  margin-top: 15%;
+  font-family: Verdana, sans-serif;
+  text-shadow: rgb(14, 13, 13) 0.1em 0.1em 0.2em;
+  color: white;
+  max-width: 80%; /* Ajusta a largura máxima */
+}
+
+/* Estilo para tablets */
+@media (max-width: 768px) {
+  .logoScuderia {
+      width: 30px;
+  }
+
+  #title, #introduction, .noticias {
+      max-width: 90%;
+  }
+
+  #imgNoticias {
+      width: 70%;
+  }
+}
+
+/* Estilo para celulares */
+@media (max-width: 480px) {
+  .logoScuderia {
+      width: 25px;
+  }
+
+  #title, #introduction, .noticias {
+      max-width: 95%;
+  }
+
+  #imgNoticias {
+      width: 90%;
+  }
+
+  .button {
+      font-size: 12px;
+  }
+}
