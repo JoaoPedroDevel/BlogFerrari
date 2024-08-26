@@ -1,1 +1,50 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+  "version": 2,
+  "name": "my-project",  // Nome do seu projeto (opcional)
+  "builds": [
+    {
+      "src": "package.json",  // Arquivo de origem para construir o projeto
+      "use": "@vercel/node"    // Usando a construção padrão para aplicações Node.js
+    },
+    {
+      "src": "public/**",      // Arquivos estáticos no diretório public
+      "use": "@vercel/static"  // Usando a construção para arquivos estáticos
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",         // Roteamento para funções serverless
+      "dest": "/api/$1.js"
+    },
+    {
+      "src": "/old-path",         // Roteamento para redirecionar URLs antigos
+      "dest": "/new-path"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/blog/:slug",   // Reescrita para rotas de blog
+      "destination": "/post?slug=:slug"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/old-url",      // Redirecionamento de URL
+      "destination": "/new-url",
+      "permanent": true
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "@my-database-url",   // Variáveis de ambiente
+    "API_KEY": "@my-api-key"
+  },
+  "functions": {
+    "api/**.js": {
+      "memory": 1024,          // Configurações para funções serverless
+      "maxDuration": 10
+    }
+  },
+  "static": {
+    "maxAge": 86400            // Configurações para arquivos estáticos
+  }
+}
